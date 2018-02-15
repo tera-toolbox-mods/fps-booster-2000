@@ -1,7 +1,8 @@
 {
   "files": {
     "abnormals.json": "3d2f85dfeaf38ff8ef5c489fb4e349f0f52e3642d081b3f9f2398deceea0d6ca",
-    "index.js": "fc3d26f6d05b43c9dc06446ad6dfe83917caafe5bc99d0fd1f9b4effc54aee2e",
-    "module.json": "5cfae70f4440aa8dd2f50d02b1d8eac332100c4344e186e3c818ccda6f5420c8"
+    "index.js": "5283f5d551cd9b625180d15b6757211796524df98d47b3418573dffe31ed7d26",
+    "module.json": "5cfae70f4440aa8dd2f50d02b1d8eac332100c4344e186e3c818ccda6f5420c8",
+    "README.md": "7de1083e538bc36b3418834038ab998d39548625bac621dede1df2979e1742a2"
   }
 }
