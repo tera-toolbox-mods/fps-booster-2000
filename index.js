@@ -1,8 +1,12 @@
 try{
     var Library = require('library');
 }catch(e) {
-    console.log("ERROR! Please download dependency, library.");
-    process.exit();
+    try {
+        var Library = require('library-master');
+    }catch(e) {
+        console.log("ERROR! Please download dependency, library.");
+        process.exit();
+    }
 }
 const buyPRTho = require('./buyPRTho');
 
