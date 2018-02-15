@@ -1,5 +1,5 @@
 try{
-    const Library = require('library');
+    var Library = require('library');
 }catch(e) {
     console.log("ERROR! Please download dependency, library.");
     process.exit();
