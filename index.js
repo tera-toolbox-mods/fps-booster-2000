@@ -1,9 +1,11 @@
+var Library
 for (let md of ["library", "library-master"]) {
     try {
-        const Library = require(md)
+       Library = require(md);
+       break
     }
     catch (err) {
-        console.error("[FPS Booster] ERROR! Can't find dependency library. Stopped!");
+        console.error(err+"[FPS Booster] ERROR! Can't find dependency library. Stopped!");
         process.exit()
     }
 }
