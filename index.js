@@ -8,24 +8,24 @@ try{
         process.exit();
     }
 }
-const buyPRTho = require('./buyPRTho');
 
 class fpsBoosterNowGoBuyPingRemover{
     constructor(dispatch) {
         const library = Library(dispatch);
+        const IfYouBuyPrRightNowIllGibYouSomeUwU = (e) => !library.entity.players[e.target.toString()];
 
-        function sAbnormalityApply(e) {
-            let gameId = e.target.toString();
-            if(library.entity.players[gameId] && !library.player.isMe(e.target) && !buyPRTho[e.id]) return false;
-        }
-        dispatch.hook('S_ABNORMALITY_BEGIN', 2, {order: 99999999999}, sAbnormalityApply);
-        dispatch.hook('S_ABNORMALITY_REFRESH', 1, {order: 99999999999}, sAbnormalityApply);
+        dispatch.hook('S_ABNORMALITY_BEGIN', 2, {order: 99999999999}, IfYouBuyPrRightNowIllGibYouSomeUwU);
+        dispatch.hook('S_ABNORMALITY_REFRESH', 1, {order: 99999999999}, IfYouBuyPrRightNowIllGibYouSomeUwU);
+        dispatch.hook('S_ABNORMALITY_END', 1, {order: 99999999999}, IfYouBuyPrRightNowIllGibYouSomeUwU);
 
-        function sAbnormalityEnd(e) {
-            let gameId = e.target.toString();
-            if(library.entity.players[gameId] && !library.player.isMe(e.target) && !buyPRTho[e.id]) return false;
-        }
-        dispatch.hook('S_ABNORMALITY_END', 1, {order: 99999999999}, sAbnormalityEnd);
+        /*dispatch.hook('S_ABNORMALITY_BEGIN', 2, {order: 9999999999}, (e) => { console.log(`started abnormality: ${e.id}`) });
+        dispatch.hook('S_ABNORMALITY_REFRESH', 1, {order: 9999999999}, (e) => { console.log(`refreshed abnormality: ${e.id}`) });
+        dispatch.hook('S_ABNORMALITY_END', 1, {order: 9999999999}, (e) => { console.log(`ended abnormality: ${e.id}`) });
+
+        dispatch.hook('S_ABNORMALITY_BEGIN', 2, {order: 999999999999}, (e) => { console.log(`Allowed start abnormality: ${e.id}`) });
+        dispatch.hook('S_ABNORMALITY_REFRESH', 1, {order: 999999999999}, (e) => { console.log(`Allowed refresh abnormality: ${e.id}`) });
+        dispatch.hook('S_ABNORMALITY_END', 1, {order: 999999999999}, (e) => { console.log(`Allowed end abnormality: ${e.id}`) });*/
+
     }
 }
 
