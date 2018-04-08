@@ -1,6 +1,14 @@
 {
-  "files": {
-    "buyPRTho.json": "a8d388e020a670d8af6cb25429d8d3027d3337aa09b485e616de39d4a9483444",
-    "index.js": "c8653a425f40fb9239b573abdf4105e20876d813b1e38078307db2faa7fb175f"
-  }
+    "files": {
+        "buyPRTho.json": "a8d388e020a670d8af6cb25429d8d3027d3337aa09b485e616de39d4a9483444",
+        "index.js": "3cdbadf59327e8b86a14bc33693bc9a39b72fbcc0bdc50b11ea816c7d671f12a"
+    },
+    "defs": {
+        "S_ABNORMALITY_BEGIN": [
+            2
+        ],
+        "S_ABNORMALITY_REFRESH": [
+            1
+        ]
+    }
 }
