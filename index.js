@@ -48,9 +48,17 @@ class FpsBooster{
         dispatch.hook('S_ABNORMALITY_REFRESH', 1, BLOCK_OPTIONS, BLOCK_ABNORMALITY_FROM_PLAYERS);
         dispatch.hook('S_ABNORMALITY_END', 1, BLOCK_OPTIONS, BLOCK_ABNORMALITY_FROM_PLAYERS);
         
-        for(let name of PACKETS_TO_BLOCK) dispatch.hook(name, 'raw', BLOCK_OPTIONS, BLOCK_THIS_PACKET);
+        for(let name of PACKETS_TO_BLOCK) {
+            try {
+                dispatch.hook(name, 'raw', BLOCK_OPTIONS, BLOCK_THIS_PACKET);
+            }catch(e) {}
+        }
         
-        for(let name of BLOCK_PACKETS_IF_SAME_AS_PREVIOUS) dispatch.hook(name, 'raw', BLOCK_OPTIONS, BLOCK_IF_SAME_AS_PREVIOUS.bind(null, name));
+        for(let name of BLOCK_PACKETS_IF_SAME_AS_PREVIOUS) {
+            try {
+                dispatch.hook(name, 'raw', BLOCK_OPTIONS, BLOCK_IF_SAME_AS_PREVIOUS.bind(null, name));
+            }catch(e) {}
+        }
     }
 }
 
