@@ -1,6 +1,7 @@
 {
     "files": {
-        "index.js": "b79f159708a66e41c6c6544e1cdaba4e1fd9f910e713fc509f9247a44a4d04e9"
+        ".gitignore": "bbdd205698ffd7c792ef29f4ec20d44b172b751cd4db319af0f3d5006ce7d096",
+        "index.js": "fa29a9986101980f619b293a27ac90d51ca150cb9296549cd86481700e407fe7"
     },
     "defs": {}
 }
