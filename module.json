@@ -4,5 +4,9 @@
     "name": "fps-booster-2000",
     "dependencies": {
         "library": "https://raw.githubusercontent.com/Kaseaa/library/master/module.json"
-    }
+    },
+    "options": {
+        "guiName": "Fps booster"
+    },
+    "description": "Boosts your fps"
 }
