@@ -8,5 +8,5 @@
     "options": {
         "guiName": "Fps booster"
     },
-    "description": "Boosts your fps"
+    "description": "Boosts your fps by blocking unneeded packets. WARNING: you will not be able to see purple health bars"
 }
