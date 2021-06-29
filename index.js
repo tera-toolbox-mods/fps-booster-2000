@@ -44,7 +44,7 @@ class FpsBooster{
             dispatch.command.message(`FPS-Booster enabled: ${enabled.toString()}`);
         });
 
-        dispatch.hook('S_ABNORMALITY_BEGIN', 3, BLOCK_OPTIONS, BLOCK_ABNORMALITY_FROM_PLAYERS);
+        dispatch.hook('S_ABNORMALITY_BEGIN', mod.majorPatchVersion <= 106 ? 4 : 5, BLOCK_OPTIONS, BLOCK_ABNORMALITY_FROM_PLAYERS);
         dispatch.hook('S_ABNORMALITY_REFRESH', 1, BLOCK_OPTIONS, BLOCK_ABNORMALITY_FROM_PLAYERS);
         dispatch.hook('S_ABNORMALITY_END', 1, BLOCK_OPTIONS, BLOCK_ABNORMALITY_FROM_PLAYERS);
         
