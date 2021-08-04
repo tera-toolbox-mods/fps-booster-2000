@@ -1,9 +1,9 @@
 {
-    "servers": ["https://raw.githubusercontent.com/Kaseaa/fps-booster-2000/master/"],
-    "supportUrl": "https://github.com/Kaseaa/fps-booster-2000/issues",
+    "servers": ["https://raw.githubusercontent.com/tera-toolbox-mods/fps-booster-2000/master/"],
+    "supportUrl": "https://github.com/tera-toolbox-mods/fps-booster-2000/issues",
     "name": "fps-booster-2000",
     "dependencies": {
-        "library": "https://raw.githubusercontent.com/Kaseaa/library/master/module.json"
+        "library": "https://raw.githubusercontent.com/tera-toolbox-mods/library/master/module.json"
     },
     "options": {
         "guiName": "Fps booster"
